@@ -6,14 +6,14 @@ const originalFlavors = [
     "Black Walnut",
     "Burgundy Cherry",
     "Butterscotch Ribbon",
-    "Cherry Macaron",
+    "Cherry oMacaron",
     "Chocolate",
     "Chocolate Almond",
     "Chocolate Chip",
     "Chocolate Fudge",
     "Chocolate Mint",
     "Chocolate Ribbon",
-    "Coffee",
+    "Coffee",w
     "Coffee Candy",
     "Date Nut",
     "Eggnog",
@@ -45,8 +45,9 @@ Use the copy function below to do the following:
     2. Return a copy of the received array  
 */
 
-function copy(/*your code here*/){
-    /*your code here*/
+function copy(myArray){
+    myArray = originalFlavors;
+    return myArray;
 }    
 
 
@@ -64,8 +65,8 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(myArray){
+   is31Flavors(myArray);
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -81,8 +82,8 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(myArray){
+    myArray.push("Rainbow Sherbet");
 }
 
 
@@ -97,8 +98,8 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(myArray){
+    myArray.pop();
 }
 
 
@@ -114,8 +115,8 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(myArray, myIndex){
+    return myArray[myIndex];
 }
 
 
@@ -134,8 +135,8 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(myArray, Name){
+    myArray.deleteElm(Name);
 }
 
 
