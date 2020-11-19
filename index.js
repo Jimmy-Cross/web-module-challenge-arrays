@@ -68,7 +68,14 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(myArray){
-   is31Flavors(myArray);
+   if (myArray.lenght == 31 )
+   {
+       return true;
+   }
+   else
+   {
+       return false;
+   }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -86,6 +93,8 @@ Use the addFlavor function below to do the following:
 
 function addFlavor(myArray){
     myArray.push("Rainbow Sherbet");
+
+    return myArray;
 }
 
 
@@ -102,6 +111,8 @@ Use the removeLastFlavor function below to do the following:
 
 function removeLastFlavor(myArray){
     myArray.pop();
+
+    return myArray;
 }
 
 
@@ -139,6 +150,8 @@ Use the removeFlavorByName function below to do the following:
 
 function removeFlavorByName(myArray, Name){
     myArray.deleteElm(Name);
+
+    return myArray;
 }
 
 
